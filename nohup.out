@@ -1,0 +1,122 @@
+Collection(11) [Map] {
+  'clear' => {
+    name: 'clear',
+    description: 'Clear all songs in the queue!',
+    execute: [AsyncFunction: execute]
+  },
+  'effect' => {
+    name: 'effect',
+    description: 'Set sound effects',
+    options: [ [Object] ],
+    execute: [AsyncFunction: execute]
+  },
+  'help' => {
+    name: 'help',
+    description: 'List all available commands.',
+    execute: [Function: execute]
+  },
+  'loop' => {
+    name: 'loop',
+    description: 'Set loop mode',
+    options: [ [Object] ],
+    execute: [AsyncFunction: execute]
+  },
+  'nowplaying' => {
+    name: 'nowplaying',
+    description: 'Get the song that is currently playing.',
+    execute: [AsyncFunction: execute]
+  },
+  'pause' => {
+    name: 'pause',
+    description: 'Pause current song!',
+    execute: [AsyncFunction: execute]
+  },
+  'ping' => {
+    name: 'ping',
+    description: 'Never gonna give yOU uP',
+    execute: [AsyncFunction: execute]
+  },
+  'play' => {
+    name: 'play',
+    description: 'Play a song in your channel!',
+    options: [ [Object] ],
+    execute: [AsyncFunction: execute]
+  },
+  'queue' => {
+    name: 'queue',
+    description: 'List all songs in the queue!',
+    execute: [AsyncFunction: execute]
+  },
+  'resume' => {
+    name: 'resume',
+    description: 'Resume current song!',
+    execute: [AsyncFunction: execute]
+  },
+  'skip' => {
+    name: 'skip',
+    description: 'Skip current song!',
+    execute: [AsyncFunction: execute]
+  }
+}
+Ready!
+Collection(11) [Map] {
+  'clear' => {
+    name: 'clear',
+    description: 'Clear all songs in the queue!',
+    execute: [AsyncFunction: execute]
+  },
+  'effect' => {
+    name: 'effect',
+    description: 'Set sound effects',
+    options: [ [Object] ],
+    execute: [AsyncFunction: execute]
+  },
+  'help' => {
+    name: 'help',
+    description: 'List all available commands.',
+    execute: [Function: execute]
+  },
+  'loop' => {
+    name: 'loop',
+    description: 'Set loop mode',
+    options: [ [Object] ],
+    execute: [AsyncFunction: execute]
+  },
+  'nowplaying' => {
+    name: 'nowplaying',
+    description: 'Get the song that is currently playing.',
+    execute: [AsyncFunction: execute]
+  },
+  'pause' => {
+    name: 'pause',
+    description: 'Pause current song!',
+    execute: [AsyncFunction: execute]
+  },
+  'ping' => {
+    name: 'ping',
+    description: 'Never gonna give yOU uP',
+    execute: [AsyncFunction: execute]
+  },
+  'play' => {
+    name: 'play',
+    description: 'Play a song in your channel!',
+    options: [ [Object] ],
+    execute: [AsyncFunction: execute]
+  },
+  'queue' => {
+    name: 'queue',
+    description: 'List all songs in the queue!',
+    execute: [AsyncFunction: execute]
+  },
+  'resume' => {
+    name: 'resume',
+    description: 'Resume current song!',
+    execute: [AsyncFunction: execute]
+  },
+  'skip' => {
+    name: 'skip',
+    description: 'Skip current song!',
+    execute: [AsyncFunction: execute]
+  }
+}
+Ready!

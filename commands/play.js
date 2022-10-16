@@ -48,7 +48,7 @@ module.exports = {
       // console.time('funvcl4');
       try {
         if (!queue.connection) {
-          console.log('No queue connection!');
+          // console.log('No queue connection!');
           await queue.connect(interaction.member.voice.channel);
         }
       } catch {
@@ -65,17 +65,22 @@ module.exports = {
       // });
       searchResult.playlist ? queue.addTracks(searchResult.tracks) : queue.addTrack(searchResult.tracks[0]);
 
-      console.log(`query now: ${query}`);
-      console.log(`track title: ${searchResult.tracks[0].title}`);
+      // console.log(`query now: ${query}`);
+      // console.log(`track title: ${searchResult.tracks[0].title}`);
+
+      interaction.followUp({
+        content: 'Buffering, pls wait',
+      });
+
       // console.timeEnd('funvcl5');
-      console.time('funvcl6');
+      // console.time('funvcl6');
       if (!queue.playing) {
-        console.log(`queue not playing when ${query}`);
+        // console.log(`queue not playing when ${query}`);
         queue.playing = true;
         await queue.play(); // cái này chạy riêng hay chung? có tính vào thời gian ko
-        console.log(`here first ${searchResult.tracks[0].title}`);
+        // console.log(`here first ${searchResult.tracks[0].title}`);
       }
-      console.timeEnd('funvcl6');
+      // console.timeEnd('funvcl6');
     } catch (error) {
       console.log(error);
       interaction.followUp({
