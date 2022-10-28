@@ -1,14 +1,14 @@
-const {QueryType} = require('discord-player');
 const {checkChannel} = require('../helpers/channelHelper.js');
-const {AudioFilters} = require('discord-player');
+const {GuildMember, ApplicationCommandOptionType } = require('discord.js');
+const {QueryType} = require('discord-player');
 module.exports = {
   name: 'play',
   description: 'Play a song in your channel!',
   options: [
     {
       name: 'query',
-      type: 3, // 'STRING' Type
-      description: 'The song you want to play',
+      type: ApplicationCommandOptionType.String,
+      description: 'Pleiku',
       required: true,
     },
   ],
@@ -42,6 +42,12 @@ module.exports = {
       // console.timeEnd('funvcl2');
       // console.time('funvcl3');
       const queue = await player.createQueue(interaction.guild, {
+        ytdlOptions: {
+				quality: "highest",
+				filter: "audioonly",
+				highWaterMark: 1 << 30,
+				dlChunkSize: 0,
+			},
         metadata: interaction.channel,
       });
       // console.timeEnd('funvcl3');
@@ -54,7 +60,7 @@ module.exports = {
       } catch {
         void player.deleteQueue(interaction.guildId);
         return void interaction.followUp({
-          content: '❌ | Could not join your voice channel!',
+          content: '❌ | ima head out boys',
         });
       } 
       // console.timeEnd('funvcl4');
@@ -63,14 +69,14 @@ module.exports = {
       // await interaction.followUp({
       //   content: `⏱ | Loading your ${searchResult.playlist ? 'playlist' : 'track'}...`,
       // });
+      await interaction.followUp({
+        content: 'Im almost there',
+      });
+
       searchResult.playlist ? queue.addTracks(searchResult.tracks) : queue.addTrack(searchResult.tracks[0]);
 
       // console.log(`query now: ${query}`);
       // console.log(`track title: ${searchResult.tracks[0].title}`);
-
-      interaction.followUp({
-        content: 'Buffering, pls wait',
-      });
 
       // console.timeEnd('funvcl5');
       // console.time('funvcl6');
@@ -84,7 +90,7 @@ module.exports = {
     } catch (error) {
       console.log(error);
       interaction.followUp({
-        content: '❌ | There was an error trying to execute that command: ' + error.message,
+        content: '❌ | i cant work without being rickrolled: ' + error.message,
       });
     }
   },

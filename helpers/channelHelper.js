@@ -14,8 +14,8 @@ async function checkVoiceChannel(interaction, player) {
   }
   
   if (
-    interaction.guild.me.voice.channelId &&
-    interaction.member.voice.channelId !== interaction.guild.me.voice.channelId
+    interaction.guild.members.me.voice.channelId &&
+    interaction.member.voice.channelId !== interaction.guild.members.me.voice.channelId
   ) {
     await interaction.followUp({
       content: '❌ | You are not in my voice channel!',
@@ -28,7 +28,7 @@ async function checkVoiceChannel(interaction, player) {
 
 async function checkTextChannel(interaction, player) {
   if (
-    interaction.guild.me.voice.channelId &&
+    interaction.guild.members.me.voice.channelId &&
     textChannel !== undefined &&
     interaction.channelId !== textChannel
   ) {

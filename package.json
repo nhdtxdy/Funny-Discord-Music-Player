@@ -1,30 +1,37 @@
 {
-  "name": "music-bot",
+  "name": "funny-discord-music-bot",
   "version": "1.0.0",
-  "repository": "https://github.com/TannerGabriel/discord-music-bot.git",
-  "description": "A simple discord music bot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhdtxdy/Funny-Discord-Music-Player.git"
+  },
+  "description": "A fun-themed discord music bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "prettier --write \"**/*.js\""
   },
   "keywords": [
     "discord",
     "music",
     "bot"
   ],
-  "author": "Gabriel Tanner",
+  "author": "Duy Nguyen (nhdtxdy)",
   "license": "MIT",
   "dependencies": {
-    "@discordjs/opus": "^0.7.0",
-    "discord-player": "^5.2.0",
-    "discord-ytdl-core": "^5.0.4",
-    "discord.js": "^13.6.0",
-    "events": "^3.3.0",
+    "@discordjs/opus": "^0.8.0",
+    "discord-player": "^5.3.2",
+    "discord.js": "^14.6.0",
+    "dotenv": "^16.0.3",
     "ffmpeg": "0.0.4",
-    "ffmpeg-static": "^4.4.1",
     "fluent-ffmpeg": "^2.1.2",
-    "opus": "0.0.0",
-    "opusscript": "0.0.8",
-    "ytdl-core": "^4.10.0"
-  }
+    "ytdl-core": "^4.11.0"
+  },
+  "devDependencies": {
+    "prettier": "2.6.2"
+  },
+  "bugs": {
+    "url": "https://github.com/nhdtxdy/Funny-Discord-Music-Player/issues"
+  },
+  "homepage": "https://github.com/nhdtxdy/Funny-Discord-Music-Player#readme"
 }
