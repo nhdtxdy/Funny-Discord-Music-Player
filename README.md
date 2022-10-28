@@ -33,6 +33,7 @@ This bot is meant to be self-hosted.
 
 ```sh
 $ git clone https://github.com/nhdtxdy/Funny-Discord-Music-Player
+$ cd Funny-Discord-Music-Player
 ```
 
 ### Install the necessary packages
