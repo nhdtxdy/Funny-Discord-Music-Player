@@ -67,3 +67,11 @@ Now you can start the bot:
 ```sh
 $ node index.js
 ```
+
+## Final Touch
+
+Finally, deploy the slash commands to your server with `!deploy`.
+
+Enjoy the bot!
+
+![](assets/working.png)
